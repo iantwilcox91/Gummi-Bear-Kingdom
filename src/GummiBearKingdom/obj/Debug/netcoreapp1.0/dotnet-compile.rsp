@@ -176,7 +176,9 @@
 --resource:"c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\obj\Debug\netcoreapp1.0\GummiBearKingdomdotnet-compile.deps.json",GummiBearKingdom.deps.json
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Program.cs
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Startup.cs
+c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Controllers\BlogController.cs
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Controllers\HomeController.cs
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Controllers\ProductsController.cs
+c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Models\Blog.cs
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Models\GummiBearKingdomContext.cs
 c:\users\bunka\desktop\GummiBearKingdom\src\GummiBearKingdom\Models\Product.cs
