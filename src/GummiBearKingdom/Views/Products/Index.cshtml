@@ -1,16 +1,22 @@
-﻿@model IEnumerable<GummiBearKingdom.Models.Product>
+﻿@{
+    ViewData["Title"] = "GummiBearKingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
 
-<html>
-<head>
-    <title>GummiBearKingdom</title>
-</head>
-<body>
+}
+
+@model IEnumerable<GummiBearKingdom.Models.Product>
+
+
+
+
+
     <h2>Gummi Bear Kingdom Products:</h2>
     <ul>
         @foreach (var listProduct in Model)
         {
-        <li>Name: @Html.DisplayFor(modelItem => listProduct.Name) @Html.ActionLink("Details", "Details", new { id = listProduct.ProductsId })</li>
+        <li>Name: @Html.DisplayFor(modelItem => listProduct.Name) @Html.ActionLink("Details", "Details", new { id = listProduct.ProductsId }) | @Html.ActionLink("Edit", "Edit", new { id = listProduct.ProductsId }) | @Html.ActionLink("Delete", "Delete", new { id = listProduct.ProductsId }) </li>
+            
         }
     </ul>
-</body>
-</html>
+    <p>@Html.ActionLink("Add new product", "Create")</p>

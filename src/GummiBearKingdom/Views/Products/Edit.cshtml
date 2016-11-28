@@ -1,0 +1,32 @@
+﻿@model GummiBearKingdom.Models.Product
+
+<html>
+<head>
+    <title>gummibearkingdom- Edit</title>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+
+</head>
+<body>
+    <h2>Edit</h2>
+    <hr />
+    <h4>Edit this product: @Html.DisplayFor(model => model.Name)</h4>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ProductsId)
+
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+
+        @Html.LabelFor(model => model.Cost)
+        @Html.TextBoxFor(model => model.Cost)
+
+        @Html.LabelFor(model => model.Country)
+        @Html.TextBoxFor(model => model.Country)
+
+        <input type="submit" value="Save" />
+    }
+    <p>@Html.ActionLink("Back to products list", "Index")</p>
+
+</body>
+</html>
